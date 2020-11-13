@@ -10,7 +10,7 @@ tweetForm.addEventListener('submit', function (e) {
     const bTag = document.createElement('b');
     const newButton = document.createElement("BUTTON");
 
-    newButton.innerHTML = "done!";  
+    newButton.innerHTML = "Done!";  
 
     newButton.addEventListener("click", myFunction);
 
