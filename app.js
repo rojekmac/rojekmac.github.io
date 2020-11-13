@@ -10,7 +10,7 @@ tweetForm.addEventListener('submit', function (e) {
     const bTag = document.createElement('b');
     const newButton = document.createElement("BUTTON");
 
-    newButton.innerHTML = "cross out";  
+    newButton.innerHTML = "done!";  
 
     newButton.addEventListener("click", myFunction);
 
