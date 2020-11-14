@@ -43,5 +43,6 @@ function myFunction() {
     newTweet.append(`${tweet}`)
     newTweets.append(newTweet)
     newTweets.append(newButton)
+    newTweets.append(newButton2)
     
 });
