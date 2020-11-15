@@ -24,6 +24,7 @@ function myFunction4() {
 
     newTweet.style.textDecoration = "underline";
     newTweet.style.color = "red";
+    newTweet.style.fontSize = "25px";
 
 }
 
