@@ -24,7 +24,7 @@ function myFunction4() {
 
     newTweet.style.textDecoration = "underline";
     newTweet.style.color = "red";
-    // newTweet.style.fontSize = "25px";
+    newTweet.style.fontSize = "25px";
     newTweet.style.fontWeight = "bold"
 
 
@@ -50,6 +50,7 @@ function myFunction2() {
 
     newTweet.style.textDecoration = "none";
     newTweet.style.color = "black";
+    
 
 }
 
@@ -61,6 +62,9 @@ function myFunction() {
     newTweet.style.textDecoration = "line-through";
     newTweet.style.textDecorationColor = "black";
     newTweet.style.color = "green";
+    newTweet.style.fontSize = "unset";
+    
+  
 
 }
    
