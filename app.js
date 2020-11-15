@@ -10,27 +10,50 @@ tweetForm.addEventListener('submit', function (e) {
     const bTag = document.createElement('b');
     const newButton = document.createElement("BUTTON");
     const newButton2 = document.createElement("BUTTON");
+    const newButton3 = document.createElement("BUTTON");
+    const newButton4 = document.createElement("BUTTON");
 
-    newButton.innerHTML = "Done!";  
-    newButton2.innerHTML = "Un-doZZZZZaaaZ!";
+    newButton.innerHTML = "Done";  
+    newButton2.innerHTML = "Un-do";
+    newButton3.innerHTML = "Remove";
+    newButton4.innerHTML = "Mark as urgent";
+
+    newButton4.addEventListener("click", myFunction4);
+
+function myFunction4() {
+
+    newTweet.style.textDecoration = "underline";
+    newTweet.style.color = "red";
+
+}
+
+    newButton3.addEventListener("click", myFunction3);
+
+function myFunction3() {
+
+    newTweet.remove();
+    newButton.remove();
+    newButton2.remove();
+    newButton3.remove();
+    newButton4.remove();
+
+}
+
+
 
     newButton2.addEventListener("click", myFunction2);
 
 function myFunction2() {
-    // newTweet.remove();
-    // newButton.remove();
-   
-    newTweet.style.textDecoration.normalize
-    // newTweet.style.textDecorationColor.toggle
-    // newTweet.style.color.toggle
+
+    newTweet.style.textDecoration = "none";
+    newTweet.style.color = "black";
 
 }
 
     newButton.addEventListener("click", myFunction);
 
 function myFunction() {
-    // newTweet.remove();
-    // newButton.remove();
+   
    
     newTweet.style.textDecoration = "line-through";
     newTweet.style.textDecorationColor = "black";
@@ -44,5 +67,6 @@ function myFunction() {
     newTweets.append(newTweet)
     newTweets.append(newButton)
     newTweets.append(newButton2)
-    
+    newTweets.append(newButton3)
+    newTweets.append(newButton4)
 });
