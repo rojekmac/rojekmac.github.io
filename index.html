@@ -3,25 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do list</title>
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+
+   
 </head>
-
-
 <body>
-    <h1>To do list</h1>
 
-    <form action='/dogs' id = 'tweetForm'>
-    <!-- <input type = 'text' name = 'username' placeholder= 'username'> -->
-    <input type = 'text' name = 'tweet' placeholder= 'New to do'>
-    <button> Add to the list</button>
-</form>
+    <div class="container"> 
+        <div class="columns">
+            <div class='column is-half is-offset-one-quarter'>
+                <div class="card">
+                    <figure class="image is-2x1">
+                        <img src="https://www.freevector.com/uploads/vector/preview/28037/Ping_Pong_Paddle_on_Table.jpg">
+                      </figure>
+                <header class="card-header">
+                  <p class="card-header-title">
+                    Ping pong score keeper
+                  </p>
+                  <a href="#" class="card-header-icon" aria-label="more options">
+                    <span class="icon">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </a>
+                </header>
+                <div class="card-content">
+                  <div class="content">
+                    <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                    <p class="subtitle">Use the buttons below to keep score</p>
+                    <label for="playto" class="label is-large is-inline">Playing to:</label>
+                    <div class="select is-rounded">
+                        <select name="" id="playto">
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                      </div>
+                </div>
+                </div>
+                <footer class="card-footer">
+                    <button class="is-primary button card-footer-item is-large" id="p1Button">+1 Player one</button>
+                    <button class="is-link button card-footer-item is-large" id="p2Button">+1 Player two</button>
+                    <button class="button is-danger button card-footer-item is-large" id="reset">Reset</button>
+                </footer>
+              </div></div>
+        </div>
+    </div>
 
-    <h2> To do: </h2>
-    <ul id="tweets">
-        
-    </ul>
 
 
-    <script src = "app.js"></script>
+
+    <script src="score.js"></script>
 </body>
 </html>
